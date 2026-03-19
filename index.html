@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Analytics 7-Day Data Viz Challenge — Olutayo Asaolu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #F0F4F8;
+            color: #1A1A2E;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 30px rgba(0,119,182,0.3);
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+        .header a { color: white; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        }
+        .card-top {
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+        .card-top h2 { font-size: 18px; margin-bottom: 5px; }
+        .card-top p { font-size: 12px; opacity: 0.85; }
+        .card-top .day { font-size: 42px; font-weight: 800; margin-bottom: 8px; }
+        .card-body {
+            padding: 20px 25px;
+        }
+        .card-body .tag {
+            display: inline-block;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin: 2px 3px 2px 0;
+            font-weight: 600;
+        }
+        .card-body .desc {
+            font-size: 13px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        .d1 .card-top { background: linear-gradient(135deg, #0077B6, #00B4D8); }
+        .d1 .tag { background: #E8F4FD; color: #0077B6; }
+        .d2 .card-top { background: linear-gradient(135deg, #1B4332, #40916C); }
+        .d2 .tag { background: #E8F4ED; color: #2D6A4F; }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer a { color: #0077B6; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>📊 SI Analytics 7-Day Data Viz Challenge</h1>
+    <p>Interactive dashboards built by <strong>Olutayo Daniel Asaolu</strong><br>
+    <a href="https://linkedin.com/in/tayoasaolu">LinkedIn</a> ·
+    <a href="https://github.com/tayoasaolu">GitHub</a> ·
+    <a href="https://tayoasaolu.github.io">Portfolio</a></p>
+</div>
+
+<div class="cards">
+
+    <a href="day1/" class="card d1">
+        <div class="card-top">
+            <div class="day">DAY 1</div>
+            <h2>🏃 Physical Activity Dashboard</h2>
+            <p>WHO recommendations, BMI, sedentary behavior</p>
+        </div>
+        <div class="card-body">
+            <span class="tag">Python</span>
+            <span class="tag">Plotly</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">K-Means</span>
+            <span class="tag">scipy</span>
+            <div class="desc">
+                Analyzed daily activity patterns across age groups, sex, and BMI.
+                Applied K-Means clustering for health risk segmentation.
+                Only 35% meet WHO activity targets.
+            </div>
+        </div>
+    </a>
+
+    <a href="day2/" class="card d2">
+        <div class="card-top">
+            <div class="day">DAY 2</div>
+            <h2>💵 U.S. State Finances Dashboard</h2>
+            <p>Government spending, debt, and revenue (1992–2019)</p>
+        </div>
+        <div class="card-body">
+            <span class="tag">Python</span>
+            <span class="tag">Plotly</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Choropleth</span>
+            <div class="desc">
+                Explored 27 years of fiscal data across 50 states.
+                K-Means clustering reveals 3 distinct fiscal profiles.
+                Education accounts for ~30% of all state spending.
+            </div>
+        </div>
+    </a>
+
+</div>
+
+<div class="footer">
+    Built with Python · Plotly · Quarto · pandas · scikit-learn<br>
+    <a href="https://linkedin.com/in/tayoasaolu">linkedin.com/in/tayoasaolu</a> ·
+    <a href="https://github.com/tayoasaolu/si-analytics-challenge">Source Code</a>
+</div>
+
+</body>
+</html>
