@@ -10,6 +10,7 @@ Interactive dashboards built by **Olutayo Daniel Asaolu**
 |-----|-------|-----------|
 | 1 | 🏃 Physical Activity & Sedentary Behavior | [View Dashboard](https://tayoasaolu.github.io/si-analytics-challenge/day1/) |
 | 2 | 💵 U.S. State Government Finances | [View Dashboard](https://tayoasaolu.github.io/si-analytics-challenge/day2/) |
+| 3 | 🩺 Pediatric HIV and Care Patterns  | [View Dashboard](https://tayoasaolu.github.io/si-analytics-challenge/day3/) |
 
 ## Tools Used
 - Python (pandas, NumPy, scipy, scikit-learn)
